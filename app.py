@@ -34,24 +34,6 @@ def load_data():
     datacenters = pd.read_csv('data/datacenter_locations.csv')
     investor_roi = pd.read_csv('data/investor_roi_summary.csv')
     operational = pd.read_csv('data/operational_metrics.csv')
-
-    # Extend financials to 2035
-    extended = []
-    for year in range(2031, 2036):
-        growth = 0.20 if year <= 2032 else 0.15
-        prev_rev = financials.loc[financials['Year']==year-1, 'Revenue'].values[0]
-        revenue = prev_rev * (1 + growth)
-
-        if year == 2035:
-            valuation = 460000000
-        elif year == 2032:
-            valuation = 200000000
-        else:
-            valuation = revenue * 6.5
-
-        extended.append({'Year': year, 'Revenue': revenue, 'Company_Valuation': valuation, 'Status': 'Projected'})
-
-    financials = pd.concat([financials, pd.DataFrame(extended)], ignore_index=True)
     return financials, datacenters, investor_roi, operational
 
 financials, datacenters, investor_roi, operational = load_data()
