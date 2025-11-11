@@ -1,0 +1,6 @@
+Round,Year,Date,Amount_Raised,Pre_Money_Valuation,Post_Money_Valuation,Equity_Sold_%,Primary_Investors,Valuation_Growth_From_Prior_%
+Seed,2015,Q1 2015,250000,750000,1000000,25.0,"Angel investors, founder equity",0.0
+Series_A,2017,Q2 2017,2000000,5000000,7000000,28.57,"Venture Capital firm, existing investors (pro-rata)",400.0
+Series_B,2026,Q2 2026 (Planned),8000000,25000000,33000000,24.24,Growth equity investors,257.14285714285717
+Series_C,2028,Q1 2028 (Planned),20000000,80000000,100000000,20.0,"Late-stage VC, strategic investors",142.42424242424244
+IPO,2030,Q3 2030 (Target),40000000,200000000,240000000,16.67,Public market offering,100.0

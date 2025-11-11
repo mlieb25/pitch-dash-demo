@@ -1,0 +1,16 @@
+id,name,location,lat,lng,year,sqft,gpus,power_kw,status,type
+DC01,Vancouver Core,"Burnaby, BC",49.2488,-122.9805,2015,5000,800,500,Operational,Primary
+DC02,Surrey Expansion,"Surrey, BC",49.1913,-122.849,2017,8000,1200,800,Operational,Secondary
+DC03,Kelowna Green,"Kelowna, BC",49.888,-119.496,2019,12000,2000,1500,Operational,Regional
+DC04,Prince George North,"Prince George, BC",53.9171,-122.7497,2021,18000,3200,2500,Operational,Regional Hub
+DC05,Richmond Tech Park,"Richmond, BC",49.1666,-123.1336,2022,15000,2800,2000,Operational,Primary
+DC06,Kamloops Energy Center,"Kamloops, BC",50.6745,-120.3273,2023,20000,3600,3000,Operational,Regional
+DC07,Fort St. John Mega,"Fort St. John, BC",56.2465,-120.8533,2025,35000,6400,5000,Under Construction,Mega Facility
+DC08,Victoria Island,"Victoria, BC",48.4284,-123.3656,2026,22000,4000,3500,Planned,Regional Hub
+DC09,Terrace North Gateway,"Terrace, BC",54.5164,-128.6037,2027,30000,5600,4500,Planned,Regional
+DC10,Calgary AI Hub,"Calgary, AB",51.0447,-114.0719,2029,40000,7200,6000,Planned,Provincial Hub
+DC11,Edmonton North,"Edmonton, AB",53.5461,-113.4938,2030,35000,6400,5500,Planned,Regional
+DC12,Toronto East,"Toronto, ON",43.6532,-79.3832,2031,45000,8000,7000,Planned,National Hub
+DC13,Montreal Tech,"Montreal, QC",45.5017,-73.5673,2033,38000,7200,6500,Planned,National Hub
+DC14,Dawson Creek Frontier,"Dawson Creek, BC",55.7606,-120.2353,2034,50000,9600,8000,Planned,Mega Facility
+DC15,Whitehorse Arctic,"Whitehorse, YT",60.7212,-135.0568,2035,42000,8000,7500,Planned,Arctic Facility
