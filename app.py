@@ -12,6 +12,12 @@ st.set_page_config(
     page_icon="🟢"
 )
 
+# Initialize session state variables
+if 'investment' not in st.session_state:
+    st.session_state.investment = 8.0
+if 'exit_quarter' not in st.session_state:
+    st.session_state.exit_quarter = 38
+
 # Custom CSS for green theme
 st.markdown("""
 <style>
@@ -268,18 +274,21 @@ else:
     if col1.button("🟢 Early Exit (Series C)", use_container_width=True):
         st.session_state.investment = 8.0
         st.session_state.exit_quarter = 11
+        st.rerun()
     if col2.button("🟢 Mid Exit (Series D)", use_container_width=True):
         st.session_state.investment = 8.0
         st.session_state.exit_quarter = 25
+        st.rerun()
     if col3.button("🟢 IPO Exit", use_container_width=True):
         st.session_state.investment = 8.0
         st.session_state.exit_quarter = 38
+        st.rerun()
 
     st.markdown("---")
 
     # Sliders
-    investment = st.slider("Investment Amount ($M)", 1.0, 20.0, st.session_state.get('investment', 8.0), 0.5)
-    exit_quarter = st.slider("Exit Quarter (0 = Q2 2026, 38 = Q4 2035)", 0, 38, st.session_state.get('exit_quarter', 38), 1)
+    investment = st.slider("Investment Amount ($M)", 1.0, 20.0, st.session_state.investment, 0.5)
+    exit_quarter = st.slider("Exit Quarter (0 = Q2 2026, 38 = Q4 2035)", 0, 38, st.session_state.exit_quarter, 1)
 
     # Store in session state
     st.session_state.investment = investment
